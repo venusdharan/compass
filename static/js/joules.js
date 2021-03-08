@@ -17,51 +17,51 @@ c.clearRect(0, 0, theCanvas.width, theCanvas.height);
 c.beginPath();
 
 c.fillStyle="black"; 
-c.fillRect(190,330, 80, 45); //clock
+c.fillRect(190,330, 70, 35); //clock
 
 c.fillStyle="white"; //colour of water
 c.fillRect(31,310, 93, 64);
-c.fillRect(200,340, 60, 25); //clock display area
+c.fillRect(200,340, 50, 15); //clock display area
 
 c.fillStyle="#aaaaaa"; //colour of thermometer
-c.fillRect(70,55, 20, 295); //thermometer
-c.fillRect(16,300, 23, 100); //insulation lhs
-c.fillRect(29,375,107,25); // in. base
-c.fillRect(126,300,23,100);	// in. rhs
-c.fillRect(16,290, 223, 20); //insulation top
+c.fillRect(70,55, 10, 295); //thermometer
+c.fillRect(16,300, 13, 90); //insulation lhs
+c.fillRect(29,375,97,15); // in. base
+c.fillRect(126,300,13,90);	// in. rhs
+c.fillRect(16,290, 123, 10); //insulation top
     
 c.fillStyle="red"; //colour of alcohol thread
-c.fillRect(71,340,18,19); // bulb
+c.fillRect(71,340,8,9); // bulb
 c.fillRect(74,yM,2,350-yM);// thread
 c.fill();
 
 for(i=70; i<=320; i+=5){ 
-c.moveTo(90,i); //small markings rhs therm
-c.lineTo(85,i);
+c.moveTo(80,i); //small markings rhs therm
+c.lineTo(75,i);
 }
 for(i=70; i<=320; i+=25){ 
-c.moveTo(90,i); //big markings rhs therm
-c.lineTo(80,i);
+c.moveTo(80,i); //big markings rhs therm
+c.lineTo(70,i);
 }
-c.font="20px Arial";
-c.strokeText("0",95,323);   //numbers on therm.
-c.strokeText("10",95,273);
-c.strokeText("20",95,223);
-c.strokeText("30",95,173);
-c.strokeText("40",95,123);
-c.strokeText("50",95,73);
+c.font="14px Arial";
+c.strokeText("0",85,323);   //numbers on therm.
+c.strokeText("10",85,273);
+c.strokeText("20",85,223);
+c.strokeText("30",85,173);
+c.strokeText("40",85,123);
+c.strokeText("50",85,73);
 
-c.rect(70,55, 20, 305); //outline of therm.
-c.strokeText(current.toFixed(1)+" A",214,273); //Ammeter display
-c.strokeText((0.1*time).toFixed(2)+" s",213,363); //Clock display
-c.moveTo(25,300);
-c.lineTo(25,400); //lhs outer container
-c.lineTo(150,400); //base
-c.lineTo(150,300); //rhs
-c.moveTo(40,310);
-c.lineTo(40,385); //lhs beaker
-c.lineTo(135,385); //base
-c.lineTo(135,310); //rhs
+c.rect(70,55, 10, 295); //outline of therm.
+c.strokeText(current.toFixed(1)+" A",204,263); //Ammeter display
+c.strokeText((0.1*time).toFixed(2)+" s",203,353); //Clock display
+c.moveTo(15,290);
+c.lineTo(15,390); //lhs outer container
+c.lineTo(140,390); //base
+c.lineTo(140,290); //rhs
+c.moveTo(30,300);
+c.lineTo(30,375); //lhs beaker
+c.lineTo(125,375); //base
+c.lineTo(125,300); //rhs
 
 c.moveTo(40,200); //top lhs wire 
 c.lineTo(40,365);
@@ -129,7 +129,7 @@ else{
 
 function resistance(){
 
-     Slider1 = document.getElementById("Slider1");
+    Slider1 = document.getElementById("Slider1");
     Resistance = Number(Slider1.value);
     voltage = 12 - ((48 - Resistance)/4);
     current = voltage/4.17; //4.17 ohms is resistance of heating element
