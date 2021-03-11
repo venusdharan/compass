@@ -12,8 +12,13 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/pwa": "^3.3.5",
+    "apexcharts": "^3.25.0",
+    "chart.js": "^2.9.4",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-apexcharts": "^1.6.0",
+    "vue-chartjs": "^3.5.1",
+    "vue-plotly": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.3"
