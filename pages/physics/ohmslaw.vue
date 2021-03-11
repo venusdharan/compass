@@ -1,7 +1,9 @@
 <template>
     <v-container>
         <v-row>
+      
             <v-col cols="4">
+                      <h1>Ohms Law Graph Voltage vs Resistance</h1>
     <v-subheader>Voltage {{voltage}} volts</v-subheader>
 
     <v-card-text>
@@ -24,7 +26,7 @@
             </v-col>
             <v-col cols="8">
                  <!--plotly :data="gdata" :layout="layout" :displayModeBar="true"></plotly-->
-                  <apexchart  ref="realtimeChart" width="100%" type="line" :options="chartOptions" :series="series"></apexchart>
+                  <apexchart  ref="realtimeChart" width="80%" type="line" :options="chartOptions" :series="series"></apexchart>
             </v-col>
         </v-row>
     </v-container>

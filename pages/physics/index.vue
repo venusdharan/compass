@@ -24,6 +24,17 @@
                        </v-card-actions>
                    </v-card>
                </v-col>
+               <v-col cols='2'>
+                   <v-card>
+                       <v-card-title>Electric Symbols</v-card-title>
+                       <v-card-subtitle>
+                           Most used and generic electric symbols
+                       </v-card-subtitle>
+                       <v-card-actions>
+                           <v-btn text color="primary" to="./physics/symbols">Go To</v-btn>
+                       </v-card-actions>
+                   </v-card>
+               </v-col>
            </v-row>
        </v-container>
    </div> 
