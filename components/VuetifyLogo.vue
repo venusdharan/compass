@@ -1,22 +1,17 @@
 <template>
   <img
     class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="/vuetify-logo.svg"
+    alt="Compass Logo"
+    src="/compass_logo.png"
   >
 </template>
 
 <style>
 .VuetifyLogo {
-  height: 180px;
-  width: 180px;
-  transform: rotateY(560deg);
-  animation: turn 3.5s ease-out forwards 1s;
+  height: 300px;
+  width: 300px;
+
 }
 
-@keyframes turn {
-  100% {
-    transform: rotateY(0deg);
-  }
-}
+
 </style>
